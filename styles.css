@@ -1,3 +1,16 @@
+#theme-icon {
+    grid-column: 5;
+    grid-row: 5;
+    justify-self: center;
+    display: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#theme-icon:hover {
+    transform: scale(1.2);
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -43,20 +56,6 @@ body.dark-theme .content {
 svg path {
     fill: #3df3c2;
     transition: fill 2.5s ease;
-}
-
-/* Стиль для ссылок в списке */
-nav ul li a {
-    text-decoration: none; /* Убираем подчеркивание */
-    color: inherit; /* Наследуем цвет текста от родителя */
-    font-size: 2.5rem;
-    cursor: pointer;
-}
-
-/* Эффект при наведении */
-nav ul li a:hover {
-    transform: scale(1.1) rotate(10deg); /* Увеличение и поворот */
-    color: #cef565; /* Изменение цвета */
 }
 
 .dark-theme svg path {
@@ -120,13 +119,40 @@ nav ul li {
     transition: all 0.3s ease;
 }
 
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
 nav ul li:hover {
     transform: scale(1.2) rotate(10deg);
     color: #cef565;
 }
 
-
 .lang-toogle {
     grid-column: 3;
     grid-row: 5;
+}
+
+@media (max-width: 768px) {
+    #theme-toggle {
+        display: none;
+    }
+
+    #theme-icon {
+        display: block;
+    }
+
+    .logo h1 {
+        font-size: 5rem; /* Уменьшаем размер заголовка */
+    }
+
+    .logo h2 {
+        font-size: 1.4rem; /* Уменьшаем размер подзаголовка */
+    }
+
+    .features nav ul li {
+        font-size: 2rem;
+        gap: 10px;
+    }
 }

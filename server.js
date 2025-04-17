@@ -1,13 +1,22 @@
-const themeToggle = document.getElementById("theme-toggle");
+const themeToggleText = document.getElementById("theme-toggle");
+const themeToggleIcon = document.getElementById("theme-icon");
 
 
-themeToggle.addEventListener("click", () => {
+function toggleTheme() {
     document.body.classList.toggle("dark-theme");
+
     const isDarkTheme = document.body.classList.contains("dark-theme");
     localStorage.setItem("theme", isDarkTheme ? "dark" : "light");
-});
+}
 
-// При загрузке страницы проверяем сохраненную тему
+if (themeToggleText) {
+    themeToggleText.addEventListener("click", toggleTheme);
+}
+
+if (themeToggleIcon) {
+    themeToggleIcon.addEventListener("click", toggleTheme);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme === "dark") {
