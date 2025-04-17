@@ -1,0 +1,132 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    padding: 1.8vh;
+    color: #3df3c2;
+    background-color: #42005a;
+    font-family: "Delius", cursive;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    align-items: center;
+}
+
+body.dark-theme {
+    color: #401202; 
+    background-color: #BF7C41;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%; /* 5 столбцов */
+    grid-template-rows: 20% 20% 20% 20% 20%; /* 5 строк */
+    align-items: center;
+    padding: 2vh;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    outline: 2px solid #3df3c2;
+    border-radius: 0.7rem;
+}
+
+body.dark-theme .content {
+    outline: 2px solid #401202;
+}
+
+svg path {
+    fill: #3df3c2;
+    transition: fill 2.5s ease;
+}
+
+/* Стиль для ссылок в списке */
+nav ul li a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: inherit; /* Наследуем цвет текста от родителя */
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+/* Эффект при наведении */
+nav ul li a:hover {
+    transform: scale(1.1) rotate(10deg); /* Увеличение и поворот */
+    color: #cef565; /* Изменение цвета */
+}
+
+.dark-theme svg path {
+    fill: #401202;
+}
+
+.tg-btn {
+    grid-column: 5;
+    grid-row: 1;
+}
+
+.telegram-logo {
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.telegram-logo svg {
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease;
+}
+
+.telegram-logo:hover {
+    transform: scale(1.2) rotate(10deg);
+}
+
+.features {
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+.logo {
+    grid-row: 3;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    width: 100%;
+}
+
+h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 10rem;
+    margin: 0%;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 8%;
+}
+
+nav ul li {
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+nav ul li:hover {
+    transform: scale(1.2) rotate(10deg);
+    color: #cef565;
+}
+
+
+.lang-toogle {
+    grid-column: 3;
+    grid-row: 5;
+}
