@@ -28,11 +28,9 @@ document.querySelectorAll('.nav-item').forEach(item => {
     let timeoutId = null;
 
     item.addEventListener('touchstart', (event) => {
-        event.preventDefault();
         if (timeoutId) {
             clearTimeout(timeoutId);
         }
-
         item.classList.add('active');
     });
 
