@@ -38,8 +38,8 @@ body.dark-theme {
 
 .content {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%; /* 5 столбцов */
-    grid-template-rows: 20% 20% 20% 20% 20%; /* 5 строк */
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
     align-items: center;
     padding: 2vh;
     width: 100%;
@@ -106,25 +106,25 @@ h2 {
   margin: 0;
 }
 
-nav ul {
+nav {
     display: flex;
     list-style-type: none;
     justify-content: center;
     gap: 8%;
 }
 
-nav ul li {
+nav div {
     font-size: 2.5rem;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-nav ul li a {
+nav div a {
     text-decoration: none;
     color: inherit;
 }
 
-nav ul li:hover {
+nav div:hover {
     transform: scale(1.2) rotate(10deg);
     color: #cef565;
 }
@@ -134,7 +134,30 @@ nav ul li:hover {
     grid-row: 5;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 830px) {
+
+    .content {
+        padding: 1vh;
+    }
+
+    body {
+        padding: 1.2vh;
+    }
+
+    .logo h1 {
+        font-size: 7rem;
+    }
+
+    .logo h2 {
+        font-size: 1.5rem;
+    }
+
+    .features nav div {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 650px) {
     #theme-toggle {
         display: none;
     }
@@ -143,16 +166,23 @@ nav ul li:hover {
         display: block;
     }
 
+    .content {
+        padding: 0;
+    }
+
+    body {
+        padding: 0.7vh;
+    }
+
     .logo h1 {
-        font-size: 5rem; /* Уменьшаем размер заголовка */
+        font-size: 4rem;
     }
 
     .logo h2 {
-        font-size: 1.4rem; /* Уменьшаем размер подзаголовка */
+        font-size: 1.3rem;
     }
 
-    .features nav ul li {
-        font-size: 2rem;
-        gap: 10px;
+    .features nav div {
+        font-size: 1.8rem;
     }
 }
