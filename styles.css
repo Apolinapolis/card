@@ -93,6 +93,7 @@ svg path {
     grid-column-start: 1;
     grid-column-end: 6;
     width: 100%;
+    pointer-events: none;
 }
 
 h1 {
@@ -184,5 +185,12 @@ nav div:hover {
 
     .features nav div {
         font-size: 1.8rem;
+    }
+}
+
+@media (max-height: 400px) {
+    
+    .logo {
+        height: 135px;
     }
 }
