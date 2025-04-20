@@ -7,9 +7,9 @@
     transition: transform 0.3s ease;
 }
 
-#theme-icon:hover {
+/* #theme-icon:hover {
     transform: scale(1.2);
-}
+} */
 
 html, body {
     margin: 0;
@@ -86,6 +86,7 @@ svg path {
     grid-row: 2;
     grid-column-start: 1;
     grid-column-end: 6;
+    touch-action: manipulation; /* Prevent zooming */
 }
 
 .logo {
@@ -111,10 +112,10 @@ nav {
     display: flex;
     list-style-type: none;
     justify-content: center;
-    gap: 8%;
+    gap: 7%;
 }
 
-nav div {
+.nav-item {
     font-size: 2.5rem;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -126,6 +127,13 @@ nav div a {
 }
 
 nav div:hover {
+    transform: scale(1.2) rotate(10deg);
+    color: #cef565;
+}
+
+/* for mobile touch */
+.nav-item.active {
+    transform: rotate(10deg);
     transform: scale(1.2) rotate(10deg);
     color: #cef565;
 }

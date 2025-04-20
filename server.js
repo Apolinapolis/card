@@ -23,3 +23,23 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.classList.add("dark-theme");
     }
 });
+
+document.querySelectorAll('.nav-item').forEach(item => {
+    let timeoutId = null;
+
+
+    item.addEventListener('touchstart', (event) => {
+        event.preventDefault();
+        if (timeoutId) {
+            clearTimeout(timeoutId);
+        }
+
+        item.classList.add('active');
+    });
+
+    item.addEventListener('touchend', () => {
+        timeoutId = setTimeout(() => {
+            item.classList.remove('active');
+        }, 1000);
+    });
+});
