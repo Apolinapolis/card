@@ -7,9 +7,9 @@
     transition: transform 0.3s ease;
 }
 
-/* #theme-icon:hover {
+#theme-icon:hover {
     transform: scale(1.2);
-} */
+}
 
 html, body {
     margin: 0;
@@ -180,7 +180,7 @@ nav div:hover {
     }
 
     body {
-        padding: 0.7vh;
+        padding: 1vh;
     }
 
     .logo h1 {

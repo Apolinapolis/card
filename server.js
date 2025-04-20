@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
 document.querySelectorAll('.nav-item').forEach(item => {
     let timeoutId = null;
 
-
     item.addEventListener('touchstart', (event) => {
         event.preventDefault();
         if (timeoutId) {
