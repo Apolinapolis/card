@@ -133,7 +133,6 @@ nav div:hover {
 
 /* for mobile touch */
 .nav-item.active {
-    transform: rotate(10deg);
     transform: scale(1.2) rotate(10deg);
     color: #cef565;
 }
@@ -144,6 +143,11 @@ nav div:hover {
 }
 
 @media (max-width: 830px) {
+
+    nav div:hover {
+        transform: none;
+        color: inherit;
+    }
 
     .content {
         padding: 1vh;
