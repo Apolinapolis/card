@@ -1,4 +1,4 @@
-#theme-icon {
+#theme-toggle-icon {
     grid-column: 5;
     grid-row: 5;
     justify-self: center;
@@ -7,7 +7,7 @@
     transition: transform 0.3s ease;
 }
 
-#theme-icon:hover {
+#theme-toggle-icon:hover {
     transform: scale(1.2);
 }
 
@@ -62,7 +62,7 @@ svg path {
     fill: #401202;
 }
 
-.tg-btn {
+#tg-btn {
     grid-column: 5;
     grid-row: 1;
 }
@@ -121,18 +121,12 @@ nav {
     transition: all 0.3s ease;
 }
 
-nav div a {
+.nav-item a {
     text-decoration: none;
     color: inherit;
 }
 
-nav div:hover {
-    transform: scale(1.2) rotate(10deg);
-    color: #cef565;
-}
-
-/* for mobile touch */
-.nav-item.active {
+.nav-item:hover {
     transform: scale(1.2) rotate(10deg);
     color: #cef565;
 }
@@ -142,12 +136,33 @@ nav div:hover {
     grid-row: 5;
 }
 
-@media (max-width: 830px) {
+/* for mobile touch */
+.nav-item.active {
+    transform: scale(1.2) rotate(10deg);
+    color: #cef565;
+}
 
-    nav div:hover {
+.telegram-logo.active {
+    transform: scale(1.2) rotate(10deg);
+}
+
+@media (hover: none) {
+
+    #theme-toogle-icon:hover {
+        transform: none;
+    }
+
+    .telegram-logo:hover {
+        transform: none;
+    }
+
+    .nav-item:hover {
         transform: none;
         color: inherit;
     }
+}
+
+@media (max-width: 830px) {
 
     .content {
         padding: 1vh;
@@ -175,7 +190,7 @@ nav div:hover {
         display: none;
     }
 
-    #theme-icon {
+    #theme-toggle-icon {
         display: block;
     }
 

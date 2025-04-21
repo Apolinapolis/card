@@ -1,5 +1,5 @@
 const themeToggleText = document.getElementById("theme-toggle");
-const themeToggleIcon = document.getElementById("theme-icon");
+const themeToggleIcon = document.getElementById("theme-toggle-icon");
 
 
 function toggleTheme() {
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-document.querySelectorAll('.nav-item').forEach(item => {
+document.querySelectorAll('.nav-item', '.telegram-logo').forEach(item => {
     let timeoutId = null;
 
     item.addEventListener('touchstart', (event) => {
