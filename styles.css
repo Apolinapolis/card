@@ -136,38 +136,6 @@ nav {
     grid-row: 5;
 }
 
-/* for mobile touch */
-.nav-item.active {
-    transform: scale(1.2) rotate(10deg);
-    color: #cef565;
-}
-
-.telegram-logo.active {
-    transform: scale(1.2) rotate(10deg);
-}
-
-#theme-toggle-icon.active {
-    transform: scale(1.2);
-}
-
-
-
-@media (hover: none) {
-
-    #theme-toogle-icon:hover {
-        transform: none;
-    }
-
-    .telegram-logo:hover {
-        transform: none;
-    }
-
-    .nav-item:hover {
-        transform: none;
-        color: inherit;
-    }
-}
-
 @media (max-width: 830px) {
 
     .content {
