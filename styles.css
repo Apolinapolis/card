@@ -25,7 +25,7 @@ body {
     color: #3df3c2;
     background-color: #42005a;
     font-family: "Delius", cursive;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
     text-align: center;
     align-items: center;
@@ -86,6 +86,7 @@ svg path {
     grid-row: 2;
     grid-column-start: 1;
     grid-column-end: 6;
+    align-self: end;
     touch-action: manipulation; /* Prevent zooming */
 }
 
@@ -118,7 +119,7 @@ nav {
 .nav-item {
     font-size: 2.5rem;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: transform 3s ease;
 }
 
 .nav-item a {
