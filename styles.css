@@ -146,6 +146,12 @@ nav {
     transform: scale(1.2) rotate(10deg);
 }
 
+#theme-toggle-icon.active {
+    transform: scale(1.2);
+}
+
+
+
 @media (hover: none) {
 
     #theme-toogle-icon:hover {
