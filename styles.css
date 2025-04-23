@@ -31,6 +31,13 @@ body {
     align-items: center;
 }
 
+body.lang-ru {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
 body.dark-theme {
     color: #401202; 
     background-color: #BF7C41;
@@ -87,7 +94,7 @@ svg path {
     grid-column-start: 1;
     grid-column-end: 6;
     align-self: end;
-    touch-action: manipulation; /* Prevent zooming */
+    touch-action: manipulation;
 }
 
 .logo {
@@ -119,7 +126,7 @@ nav {
 .nav-item {
     font-size: 2.5rem;
     cursor: pointer;
-    transition: transform 3s ease;
+    transition: transform 0.4s ease;
 }
 
 .nav-item a {
@@ -132,9 +139,17 @@ nav {
     color: #cef565;
 }
 
-.lang-toogle {
+.lang-toggle {
     grid-column: 3;
     grid-row: 5;
+    transition: transform 0.4s ease;
+}
+
+.lang-toggle:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    color: #cef565;
+    transition: transform 0.4s ease;
 }
 
 @media (max-width: 830px) {
@@ -152,7 +167,7 @@ nav {
     }
 
     .logo h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .features nav div {
@@ -178,15 +193,21 @@ nav {
     }
 
     .logo h1 {
-        font-size: 4rem;
+        font-size: 6rem;
     }
 
     .logo h2 {
-        font-size: 1.3rem;
+        font-size: 1.8rem;
     }
 
     .features nav div {
         font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 470px) {
+    .logo h1 {
+        font-size: 4rem;
     }
 }
 
