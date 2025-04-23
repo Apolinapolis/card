@@ -119,7 +119,7 @@ nav {
 .nav-item {
     font-size: 2.5rem;
     cursor: pointer;
-    transition: transform 3s ease;
+    transition: transform 0.4s ease;
 }
 
 .nav-item a {
@@ -132,9 +132,17 @@ nav {
     color: #cef565;
 }
 
-.lang-toogle {
+.lang-toggle {
     grid-column: 3;
     grid-row: 5;
+    transition: transform 0.4s ease;
+}
+
+.lang-toggle:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    color: #cef565;
+    transition: transform 0.4s ease;
 }
 
 @media (max-width: 830px) {
@@ -178,7 +186,7 @@ nav {
     }
 
     .logo h1 {
-        font-size: 4rem;
+        font-size: 6rem;
     }
 
     .logo h2 {
@@ -187,6 +195,12 @@ nav {
 
     .features nav div {
         font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 470px) {
+    .logo h1 {
+        font-size: 4rem;
     }
 }
 
