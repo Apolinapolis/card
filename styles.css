@@ -94,7 +94,7 @@ svg path {
     grid-column-start: 1;
     grid-column-end: 6;
     align-self: end;
-    touch-action: manipulation; /* Prevent zooming */
+    touch-action: manipulation;
 }
 
 .logo {
@@ -167,7 +167,7 @@ nav {
     }
 
     .logo h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .features nav div {
@@ -197,7 +197,7 @@ nav {
     }
 
     .logo h2 {
-        font-size: 1.3rem;
+        font-size: 1.8rem;
     }
 
     .features nav div {

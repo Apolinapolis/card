@@ -11,9 +11,9 @@ const translations = {
     },
     ru: {
         nav: {
-            bookshelf: "Книги",
-            works: "Работы",
-            mode: "Режим"
+            bookshelf: "Библиотека",
+            works: "Проекты",
+            mode: "Тема"
         },
         h2: "Нечто не имеющее ничего неинтересного",
         langToggle: "RU/en"
@@ -41,29 +41,13 @@ function updateText(language) {
 }
 
 //Функция переключения локализации
-// function toggleLanguage() {
-//     let currentLanguage = localStorage.getItem('language') || 'en';
-//     const newLanguage = currentLanguage === 'en' ? 'ru' : 'en';
-//     localStorage.setItem('language', newLanguage);
-//     updateText(newLanguage);
-// }
-
 function toggleLanguage() {
-    // Получаем текущий язык из localStorage или используем 'en' по умолчанию
     let currentLanguage = localStorage.getItem('language') || 'en';
-
-    // Переключаем язык
     const newLanguage = currentLanguage === 'en' ? 'ru' : 'en';
-
-    // Сохраняем новый язык в localStorage
     localStorage.setItem('language', newLanguage);
-
-    // Обновляем текст на странице
     updateText(newLanguage);
-
-    // Обновляем класс для body
-    document.body.classList.remove('lang-en', 'lang-ru'); // Удаляем старые классы
-    document.body.classList.add(`lang-${newLanguage}`); // Добавляем новый класс
+    document.body.classList.remove('lang-en', 'lang-ru');
+    document.body.classList.add(`lang-${newLanguage}`);
 }
 
 // Инициализация при загрузке страницы
