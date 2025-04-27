@@ -23,14 +23,11 @@ html, body {
 html.lang-en {
     font-family: "Delius", cursive;
     font-optical-sizing: auto;
-    font-weight: 400;
 }
 
 html.lang-ru {
     font-family: "Caveat", cursive;
     font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
 }
 
 body {
@@ -59,6 +56,29 @@ body.dark-theme {
     box-sizing: border-box;
     outline: 2px solid #3df3c2;
     border-radius: 0.7rem;
+}
+
+.books_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 2vh;
+    width: 100%;
+    height: calc(100% - 2vh);
+    box-sizing: border-box;
+    outline: 2px solid #3df3c2;
+    border-radius: 0.7rem;
+}
+
+.books_content > div {
+    background-color: rgba(61, 243, 194, 0.2); /* Полупрозрачный фон */
+    color: #3df3c2; /* Цвет текста */
+    text-align: center; /* Текст по центру */
+    padding: 20px; /* Внутренние отступы */
+    border-radius: 0.5rem; /* Скругление углов */
+    font-size: 1.2rem; /* Размер шрифта */
+    font-weight: bold; /* Жирный текст */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
 }
 
 body.dark-theme .content {
