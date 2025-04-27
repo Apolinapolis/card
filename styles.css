@@ -20,22 +20,27 @@ html, body {
     overflow: hidden;
 }
 
-body {
-    padding: 1.8vh;
-    color: #3df3c2;
-    background-color: #42005a;
+html.lang-en {
     font-family: "Delius", cursive;
+    font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    align-items: center;
 }
 
-body.lang-ru {
+html.lang-ru {
     font-family: "Caveat", cursive;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+}
+
+body {
+    padding: 1.8vh;
+    color: #3df3c2;
+    background-color: #42005a;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    align-items: center;
 }
 
 body.dark-theme {
@@ -153,7 +158,6 @@ nav {
 }
 
 @media (max-width: 830px) {
-
     .content {
         padding: 1vh;
     }
@@ -212,7 +216,6 @@ nav {
 }
 
 @media (max-height: 400px) {
-    
     .logo {
         height: 135px;
     }

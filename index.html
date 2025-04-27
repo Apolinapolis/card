@@ -8,6 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Delius&display=swap" rel="stylesheet">
+    <script>
+      // Установка классов для <html> до загрузки DOM
+      const savedLanguage = localStorage.getItem('language') || 'en';
+      document.documentElement.classList.add(`lang-${savedLanguage}`);
+
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark') {
+          document.documentElement.classList.add('dark-theme');
+      }
+  </script>
 </head>
 <body>
       <div class="content">
@@ -18,7 +28,7 @@
             </div>
             <div class="features">
                   <nav>
-                        <div class="nav-item" data-key="bookshelf">Bookshelf</div>
+                        <div class="nav-item" data-key="bookshelf"><a href="bookshelf.html">Bookshelf</a></div>
                         <div class="nav-item" data-key="works" ><a href="https://github.com/Apolinapolis" target="_blank">Works</a></div>
                         <div class="nav-item" data-key="mode" id="theme-toggle" onclick="toggleTheme()">Mode</div>
                   </nav>
