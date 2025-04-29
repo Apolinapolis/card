@@ -1,16 +1,13 @@
-#theme-toggle-icon {
-    grid-column: 5;
-    grid-row: 5;
-    justify-self: center;
-    display: none;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+:root {
+    --light-text_color: #3df3c2;
+    --light-background-color: #42005a;
+    --dark-text_color: #401202;
+    --dark-background-color: #BF7C41;
+    --base-hover-color: #cef565;
 }
 
-#theme-toggle-icon:hover {
-    transform: scale(1.2);
-}
 
+/* global styles */
 html, body {
     margin: 0;
     padding: 0;
@@ -32,8 +29,8 @@ html.lang-ru {
 
 body {
     padding: 1.8vh;
-    color: #3df3c2;
-    background-color: #42005a;
+    color: var(--light-text_color);
+    background-color: var(--light-background-color);
     font-weight: 400;
     font-style: normal;
     text-align: center;
@@ -41,8 +38,23 @@ body {
 }
 
 body.dark-theme {
-    color: #401202; 
-    background-color: #BF7C41;
+    color: var(--dark-text_color); 
+    background-color: var(--dark-background-color);
+}
+
+
+/* main */
+#theme-toggle-icon {
+    grid-column: 5;
+    grid-row: 5;
+    justify-self: center;
+    display: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#theme-toggle-icon:hover {
+    transform: scale(1.2);
 }
 
 .content {
@@ -54,44 +66,21 @@ body.dark-theme {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    outline: 2px solid #3df3c2;
+    outline: 2px solid var(--light-text_color);
     border-radius: 0.7rem;
-}
-
-.books_content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    padding: 2vh;
-    width: 100%;
-    height: calc(100% - 2vh);
-    box-sizing: border-box;
-    outline: 2px solid #3df3c2;
-    border-radius: 0.7rem;
-}
-
-.books_content > div {
-    background-color: rgba(61, 243, 194, 0.2); /* Полупрозрачный фон */
-    color: #3df3c2; /* Цвет текста */
-    text-align: center; /* Текст по центру */
-    padding: 20px; /* Внутренние отступы */
-    border-radius: 0.5rem; /* Скругление углов */
-    font-size: 1.2rem; /* Размер шрифта */
-    font-weight: bold; /* Жирный текст */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
 }
 
 body.dark-theme .content {
-    outline: 2px solid #401202;
+    outline: 2px solid var(--dark-text_color);
 }
 
 svg path {
-    fill: #3df3c2;
+    fill: var(--light-text_color);
     transition: fill 2.5s ease;
 }
 
 .dark-theme svg path {
-    fill: #401202;
+    fill: var(--dark-text_color);
 }
 
 #tg-btn {
@@ -161,7 +150,7 @@ nav {
 
 .nav-item:hover {
     transform: scale(1.2) rotate(10deg);
-    color: #cef565;
+    color: var(--base-hover-color);
 }
 
 .lang-toggle {
@@ -173,7 +162,7 @@ nav {
 .lang-toggle:hover {
     cursor: pointer;
     transform: scale(1.2);
-    color: #cef565;
+    color: var(--base-hover-color);
     transition: transform 0.4s ease;
 }
 
@@ -239,4 +228,72 @@ nav {
     .logo {
         height: 135px;
     }
+}
+
+/* bookshelf */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+}
+
+header .title {
+    flex: 1;
+    text-align: left;
+    max-width: 75%;
+    margin-left: 3%;
+    font-size: 3rem;
+}
+
+header .back-button {
+    flex: 1;
+    max-width: 25%;
+    background-color: var(--light-background-color);
+    color: var(--light-text_color);
+    border: 2px solid var(--light-text_color);
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    font-size: 1.8rem;
+    transition: background-color 0.4s ease;
+    text-align: center;
+}
+
+body.dark-theme .back-button {
+    background-color: var(--dark-background-color);
+    color: var(--dark-text_color);
+    border-color: var(--dark-text_color)
+}
+
+html.lang-ru .back-button{
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+}
+
+header .back-button:hover {
+    background-color: var(--base-hover-color);
+}
+
+.books_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+    height: 100%;
+    outline: 2px solid var(--light-text_color);
+    border-radius: 0.7rem;
+}
+
+.books_content > div {
+    background-color: rgba(61, 243, 194, 0.2);
+    padding: 1rem;
+    border-radius: 0.7rem;
+    font-size: 1.8rem;
 }
