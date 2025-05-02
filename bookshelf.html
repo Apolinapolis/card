@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,68 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Delius&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Delius&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
         <header>
-            <h3 class="title">Наиболее впечатлившие книги</h3>
+            <h3 class="title">Годное чтиво</h3>
             <button class="back-button" onclick="window.location.href='index.html'">На главную</button>
         </header>
-            <div class="books_content">
-                <div>Разработка</div>
-                <div>Личная эффективность</div>
-                <div>Психология и эзотерика</div>
-                <div>Художественная</div>
+        <div class="books_content">
+            <div class="category">
+                <h4>Разработка</h4>
+                <ul class="book-list">
+                    <li>"JavaScript" - Эрик Фримен, Элизабет Робсон (Head First)</li>
+                    <li>"Грокаем Алгоритмы" - Адитья Бхаргава</li>
+                    <li>"Python" - Эрик Мэтиз</li>
+                    <li>"Чистый код" - Роберт Мартин</li>
+                    <li>"Карьера в IT" - Джон Сомнез</li>
+                    <li>"Тестирование ПО" - Канер, Фолк, Нгуен</li>
+                    <li>"Гид по Computer Science" - Вильям Спрингер</li>
+                </ul>
             </div>
+            <div class="category">
+                <h4>Личная эффективность</h4>
+                <ul class="book-list">
+                    <li>"Законы победителей" - Бодо Шефер</li>
+                    <li>"Атомные привычки" - Джеймс Клир</li>
+                    <li>"Никогда-нибудь" - Елена Резанова</li>
+                    <li>"Как завоёвывать друзей и ..." - Дейл Карнеги</li>
+                    <li>"45 татуировок продавана" - Максим Батырев</li>
+                    <li>"Богатый папа, бедный папа" - Роберт Кийосаки</li>
+                    <li>"Работа, деньги и Любовь" - Наташа Грейс</li>
+                </ul>
+            </div>
+            <div class="category">
+                <h4>Психология и эзотерика</h4>
+                <ul class="book-list">
+                    <li>"Путешествие души" - Майкл Ньютон</li>
+                    <li>"Любовь, свобода, одиночество" - ОШО</li>
+                    <li>"Учение Дона Хуана" - Карлос Кастанеда</li>
+                    <li>"Нет Эго, нет проблем" - Крин Нибауэр</li>
+                    <li>"Кармический менеджмент" - Майкл Роуч</li>
+                    <li>"Путь настоящего мужчины" - Дэвид Дэйда</li>
+                    <li>"Психологическое айкидо" - Михаил Литвак</li>
+                </ul>
+            </div>
+            <div class="category">
+                <h4>Художественная и Научпоп</h4>
+                <ul class="book-list">
+                    <li>"Краткая история времени" - Стивен Хокинг</li>
+                    <li>"Очаровательный кишечник" - Джулия Эндерс</li>
+                    <li>"Граф Монте-Кристо" - Александр Дюма</li>
+                    <li>"Метод Мистери" - Эрик фон Марковик</li>
+                    <li>"Sapiens" - Юваль Ной Харари</li>
+                    <li>"Матадор" - Луис Ривера</li>
+                    <li>"Источник" - Айн Рэнд</li>
+                </ul>
+            </div>
+        </div>
     </div>
     <script src="server.js"></script>
 </body>
+
 </html>

@@ -287,13 +287,33 @@ header .back-button:hover {
     grid-gap: 10px;
     width: 100%;
     height: 100%;
-    outline: 2px solid var(--light-text_color);
     border-radius: 0.7rem;
 }
 
 .books_content > div {
-    background-color: rgba(61, 243, 194, 0.2);
+    outline: 2px solid var(--light-text_color);
     padding: 1rem;
     border-radius: 0.7rem;
+}
+
+.category h4 {
+    margin:0 0 1rem 0;
+    text-align: center;
     font-size: 1.8rem;
+    text-decoration: underline;
+}
+
+body.dark-theme .books_content > div {
+    outline: 2px solid var(--dark-text_color);
+}
+
+.book-list {
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+}
+
+.book-list li {
+    padding: 5px 0;
+    font-size: 1.5rem;
 }
