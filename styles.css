@@ -79,7 +79,7 @@ svg path {
     transition: fill 2.5s ease;
 }
 
-.dark-theme svg path {
+body.dark-theme svg path {
     fill: var(--dark-text_color);
 }
 
