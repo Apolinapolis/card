@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Delius&display=swap" rel="stylesheet">
-<script src="main.js" defer></script>
+    <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -25,114 +25,68 @@
     <div class="container">
         <header>
             <h3 class="title" data-key="bookshelf.title">Good reads</h3>
-            <button class="back-button" data-key="bookshelf.back-btn" onclick="window.location.href='index.html'">Back to Main</button>
+            <button class="back-button" data-key="bookshelf.back-btn" onclick="window.location.href='index.html'">Back</button>
         </header>
         <div class="books_content">
             <div class="category">
-                <h4 data-key="bookshelf.dev">Development</h4>
-                <ul class="book-list">
-                    <li data-key="bookshelf.dev.1">"JavaScript Programming" - Eric Freeman</li>
-                    <li data-key="bookshelf.dev.2">"Grokking Algorithms" — Aditya Bhargava</li>
-                    <li data-key="bookshelf.dev.3">"Python Crash Course" — Eric Matthes</li>
-                    <li data-key="bookshelf.dev.4">"Clean Code" — Robert Martin</li>
-                    <li data-key="bookshelf.dev.5">"Passionate Programmer" - Chad Fowler</li>
-                    <li data-key="bookshelf.dev.6">"Testing Computer Software" — Kaner, Falk, Nguyen</li>
-                    <li data-key="bookshelf.dev.7">"A Guide to Computer Science" - Springer</li>
-                </ul>
+                <details>
+                    <summary data-key="bookshelf.dev">Development</summary>
+                    <ul class="book-list">
+                        <li data-key="bookshelf.dev.1">"JavaScript Programming" - Eric Freeman</li>
+                        <li data-key="bookshelf.dev.2">"Grokking Algorithms" — Aditya Bhargava</li>
+                        <li data-key="bookshelf.dev.3">"Python Crash Course" — Eric Matthes</li>
+                        <li data-key="bookshelf.dev.4">"Clean Code" — Robert Martin</li>
+                        <li data-key="bookshelf.dev.5">"Passionate Programmer" - Chad Fowler</li>
+                        <li data-key="bookshelf.dev.6">"Testing Computer Software" — Cem Kaner</li>
+                        <li data-key="bookshelf.dev.7">"A Guide to Computer Science" - Springer</li>
+                    </ul>
+                </details>
             </div>
             <div class="category">
-                <h4 data-key="bookshelf.personal">Personal Effectiveness</h4>
-                <ul class="book-list">
-                    <li data-key="bookshelf.personal.1">"The Laws of Winning" — Bodo Schäfer</li>
-                    <li data-key="bookshelf.personal.2">"Atomic Habits" — James Clear</li>
-                    <li data-key="bookshelf.personal.3">"Never Is Never" — Elena Rezanova</li>
-                    <li data-key="bookshelf.personal.4">"How to Win Friends and ..." — Dale Carnegie</li>
-                    <li data-key="bookshelf.personal.5">"45 Sales Tattoos" — Maxim Batirev</li>
-                    <li data-key="bookshelf.personal.6">"Rich Dad Poor Dad" — Robert Kiyosaki</li>
-                    <li data-key="bookshelf.personal.7">"Work, Money and Love" — Natasha Grace</li>
-                </ul>
+                <details>
+                    <summary data-key="bookshelf.personal">Personal Effectiveness</summary>
+                    <ul class="book-list">
+                        <li data-key="bookshelf.personal.1">"The Laws of Winning" — Bodo Schäfer</li>
+                        <li data-key="bookshelf.personal.2">"Atomic Habits" — James Clear</li>
+                        <li data-key="bookshelf.personal.3">"Never Is Never" — Elena Rezanova</li>
+                        <li data-key="bookshelf.personal.4">"How to Win Friends..." — Dale Carnegie</li>
+                        <li data-key="bookshelf.personal.5">"45 Sales Tattoos" — Maxim Batirev</li>
+                        <li data-key="bookshelf.personal.6">"Rich Dad Poor Dad" — Robert Kiyosaki</li>
+                        <li data-key="bookshelf.personal.7">"Work, Money and Love" — Natasha Grace</li>
+                    </ul>
+                </details>
             </div>
             <div class="category">
-                <h4 data-key="bookshelf.psychology">Psychology & Esoterics</h4>
-                <ul class="book-list">
-                    <li data-key="bookshelf.psychology.1">"Journey of Souls" — Michael Newton</li>
-                    <li data-key="bookshelf.psychology.2">"Love, Freedom, and Aloneness" — Osho</li>
-                    <li data-key="bookshelf.psychology.3">"The Teachings of Don Juan" — Carlos Castaneda</li>
-                    <li data-key="bookshelf.psychology.4">"No Ego, No Problem" — Krzysztof Niemczewski</li>
-                    <li data-key="bookshelf.psychology.5">"The Karma Yoga Code" — Michael Roach</li>
-                    <li data-key="bookshelf.psychology.6">"The Way of the Superior Man" — David Deida</li>
-                    <li data-key="bookshelf.psychology.7">"Psychological Aikido" — Mikhail Litvak</li>
-                </ul>
+                <details>
+                    <summary data-key="bookshelf.psychology">Psychology & Esoterics</summary>
+                    <ul class="book-list">
+                        <li data-key="bookshelf.psychology.1">"Journey of Souls" — Michael Newton</li>
+                        <li data-key="bookshelf.psychology.2">"Love, Freedom, and Aloneness" — Osho</li>
+                        <li data-key="bookshelf.psychology.3">"The Teachings of Don Juan" — C. Castaneda</li>
+                        <li data-key="bookshelf.psychology.4">"No Ego, No Problem" — Krzysztof Niemczewski</li>
+                        <li data-key="bookshelf.psychology.5">"The Karma Yoga Code" — Michael Roach</li>
+                        <li data-key="bookshelf.psychology.6">"The Way of the Superior Man" — David Deida</li>
+                        <li data-key="bookshelf.psychology.7">"Psychological Aikido" — Mikhail Litvak</li>
+                    </ul>
+                </details>
             </div>
             <div class="category">
-                <h4 data-key="bookshelf.fiction">Science & Fiction</h4>
-                <ul class="book-list">
-                    <li data-key="bookshelf.fiction.1">"A Brief History of Time" — Stephen Hawking</li>
-                    <li data-key="bookshelf.fiction.2">"The Count of Monte Cristo" — Alexandre Dumas</li>
-                    <li data-key="bookshelf.fiction.3">"The Mysterium Method" — Eric von Markovik</li>
-                    <li data-key="bookshelf.fiction.4">"Sapiens" — Yuval Noah Harari</li>
-                    <li data-key="bookshelf.fiction.5">"Matador" — Luis Riera</li>
-                    <li data-key="bookshelf.fiction.6">"The Fountainhead" — Ayn Rand</li>
-                    <li data-key="bookshelf.fiction.7">"Gut" - Giulia Enders</li>
-                </ul>
+                <details>
+                    <summary data-key="bookshelf.fiction">Science & Fiction</summary>
+                    <ul class="book-list">
+                        <li data-key="bookshelf.fiction.1">"A Brief History of Time" — Stephen Hawking</li>
+                        <li data-key="bookshelf.fiction.2">"The Count of Monte Cristo" — A. Dumas</li>
+                        <li data-key="bookshelf.fiction.3">"The Mysterium Method" — Eric von Markovik</li>
+                        <li data-key="bookshelf.fiction.4">"Sapiens" — Yuval Noah Harari</li>
+                        <li data-key="bookshelf.fiction.6">"The Fountainhead" — Ayn Rand</li>
+                        <li data-key="bookshelf.fiction.5">"Matador" — Luis Riera</li>
+                        <li data-key="bookshelf.fiction.7">"Gut" - Giulia Enders</li>
+                    </ul>
+                </details>
+
             </div>
         </div>
     </div>
 </body>
 
 </html>
-
-
-<!-- 
-    <div class="container">
-        <header>
-            <h3 class="title" data-key="bookshelf.title">Годное чтиво</h3>
-            <button class="back-button" onclick="window.location.href='index.html'"></button>
-        </header>
-        <div class="books_content">
-            <div class="category">
-                <h4 data-key="bookshelf.dev">Разработка</h4>
-                <ul class="book-list">
-                    <li>"JavaScript" - Эрик Фримен, Элизабет Робсон (Head First)</li>
-                    <li>"Грокаем Алгоритмы" - Адитья Бхаргава</li>
-                    <li>"Python" - Эрик Мэтиз</li>
-                    <li>"Чистый код" - Роберт Мартин</li>
-                    <li>"Карьера в IT" - Джон Сомнез</li> Ч.Фаулер «Программист-фанатик»
-                    <li>"Тестирование ПО" - Канер, Фолк, Нгуен</li>
-                    <li>"Гид по Computer Science" - Вильям Спрингер</li>
-                </ul>
-            </div>
-            <div class="category">
-                <h4 data-key="bookshelf.personal">Личная эффективность</h4>
-                <ul class="book-list">
-                    <li>"Законы победителей" - Бодо Шефер</li>
-                    <li>"Атомные привычки" - Джеймс Клир</li>
-                    <li>"Никогда-нибудь" - Елена Резанова</li>
-                    <li>"Как завоёвывать друзей и ..." - Дейл Карнеги</li>
-                    <li>"45 татуировок продавана" - Максим Батырев</li>
-                    <li>"Богатый папа, бедный папа" - Роберт Кийосаки</li>
-                    <li>"Работа, деньги и Любовь" - Наташа Грейс</li>
-                </ul>
-            </div>
-            <div class="category">
-                <h4 data-key="bookshelf.psychology">Психология и эзотерика</h4>
-                <ul class="book-list">
-                    <li>"Путешествие души" - Майкл Ньютон</li>
-                    <li>"Любовь, свобода, одиночество" - ОШО</li>
-                    <li>"Учение Дона Хуана" - Карлос Кастанеда</li>
-                    <li>"Нет Эго, нет проблем" - Крин Нибауэр</li>
-                    <li>"Кармический менеджмент" - Майкл Роуч</li>
-                    <li>"Путь настоящего мужчины" - Дэвид Дэйда</li>
-                    <li>"Психологическое айкидо" - Михаил Литвак</li>
-                </ul>
-            </div>
-            <div class="category">
-                <h4 data-key="bookshelf.fiction">Fiction & Science</h4>
-                <ul class="book-list">
-                    <li>"Краткая история времени" - Стивен Хокинг</li>
-                    <li>"Очаровательный кишечник" - Джулия Эндерс</li>
-                    <li>"Граф Монте-Кристо" - Александр Дюма</li>
-                    <li>"Метод Мистери" - Эрик фон Марковик</li>
-                    <li>"Sapiens" - Юваль Ной Харари</li>
-                    <li>"Матадор" - Луис Ривера</li>
-                    <li>"Источник" - Айн Рэнд</li> -->

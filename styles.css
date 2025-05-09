@@ -8,7 +8,8 @@
 
 
 /* global styles */
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -38,7 +39,7 @@ body {
 }
 
 body.dark-theme {
-    color: var(--dark-text_color); 
+    color: var(--dark-text_color);
     background-color: var(--dark-background-color);
 }
 
@@ -126,8 +127,8 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
-  margin: 0;
+    font-size: 2rem;
+    margin: 0;
 }
 
 nav {
@@ -261,9 +262,13 @@ header .back-button {
     padding: 0.5rem;
     border-radius: 0.7rem;
     cursor: pointer;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     transition: background-color 0.4s ease;
     text-align: center;
+}
+
+.lang-en .back-button {
+    font-family: "Delius", cursive;
 }
 
 body.dark-theme .back-button {
@@ -272,7 +277,7 @@ body.dark-theme .back-button {
     border-color: var(--dark-text_color)
 }
 
-html.lang-ru .back-button{
+html.lang-ru .back-button {
     font-family: "Caveat", cursive;
     font-optical-sizing: auto;
 }
@@ -290,25 +295,18 @@ header .back-button:hover {
     border-radius: 0.7rem;
 }
 
-.books_content > div {
+.category {
     outline: 2px solid var(--light-text_color);
     padding: 1rem;
     border-radius: 0.7rem;
 }
 
-.category h4 {
-    margin:0 0 1rem 0;
-    text-align: center;
-    font-size: 1.8rem;
-    text-decoration: underline;
-}
-
-body.dark-theme .books_content > div {
+body.dark-theme .category {
     outline: 2px solid var(--dark-text_color);
 }
 
 .book-list {
-    list-style-type:none;
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
@@ -316,4 +314,91 @@ body.dark-theme .books_content > div {
 .book-list li {
     padding: 5px 0;
     font-size: 1.5rem;
+}
+
+.book-list li:hover {
+    color: var(--base-hover-color);
+}
+
+.lang-ru .book-list li {
+    font-size: 1.6rem
+}
+
+.lang-ru summary {
+    font-size: 2rem;
+}
+
+
+@media (min-width: 769px) {
+    details > summary {
+        display: block;
+        margin: 0 0 1rem 0;
+        font-size: 1.8rem;
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: 1280px) {
+    .lang-en .book-list li {
+        font-size: 1.3rem
+    }
+
+    .category {
+        padding: 0.6rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .lang-en .book-list li {
+        font-size: 1.1rem
+    }
+
+    .lang-ru .book-list li {
+        font-size: 1.4rem;
+    }
+
+    .category {
+        padding: 0.3rem;
+    }
+}
+
+@media (max-width: 840px) {
+    .lang-en .book-list li {
+        font-size: 1rem
+    }
+}
+
+@media (max-width: 768px) {
+    .books_content {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0.7rem;
+        gap: 1rem;
+        padding-top: 3rem;
+        align-items: center;
+    }
+
+    details > summary {
+        font-size: 1.5rem;
+    }
+
+    .category{
+        width: 90%;
+    }
+}
+
+@media (max-width: 420px) {
+    .lang-ru .book-list li {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .lang-en .title {
+        font-size: 2rem;
+    }
+
+    .category{
+        width: 98%;
+    }
 }
