@@ -121,6 +121,23 @@ function syncDetailsWithScreenSize() {
   }
 }
 
+function initSingleOpenAccordion() {
+  const detailsList = document.querySelectorAll("details");
+
+  detailsList.forEach(details => {
+      details.addEventListener("toggle", () => {
+          if (details.open && window.innerWidth <= 768) {
+              // Если этот блок открывается
+              detailsList.forEach(other => {
+                  if (other !== details) {
+                      other.open = false;
+                  }
+              });
+          }
+      });
+  });
+}
+
 //Create object for return to english language
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("[data-key]").forEach((item) => {
@@ -131,6 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
   updateText(savedLanguage);
   disableDetailsOnDesktop();
   syncDetailsWithScreenSize();
+  initSingleOpenAccordion();
 });
 
 window.addEventListener("resize", () => {
