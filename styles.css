@@ -54,7 +54,7 @@ body.dark-theme {
 /* main */
 #theme-toggle-icon {
     grid-column: 5;
-    grid-row: 5;
+    grid-row: 2;
     justify-self: center;
     display: none;
     cursor: pointer;
@@ -117,6 +117,7 @@ body.dark-theme svg path {
     grid-column-end: 6;
     align-self: end;
     touch-action: manipulation;
+    margin-bottom: 2vh;
 }
 
 .logo {
@@ -163,7 +164,7 @@ nav {
 
 .lang-toggle {
     grid-column: 3;
-    grid-row: 5;
+    grid-row: 4;
     transition: transform 0.4s ease;
 }
 
@@ -210,7 +211,7 @@ nav {
     }
 
     body {
-        padding: 1vh 1vh 5vh 1vh;
+        padding: 1vh;
     }
 
     .logo h1 {
@@ -219,6 +220,10 @@ nav {
 
     .logo h2 {
         font-size: 1.8rem;
+    }
+
+    .features {
+        margin-bottom: 0;
     }
 
     .features nav div {
