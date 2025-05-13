@@ -9,6 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Delius&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
     <script src="main.js" defer></script>
 </head>
 
@@ -24,13 +29,13 @@
     </script>
     <div class="container">
         <header>
-            <h3 class="title" data-key="bookshelf.title">Good reads</h3>
+            <h3 class="title no-select" data-key="bookshelf.title">Good reads</h3>
             <button class="back-button" data-key="bookshelf.back-btn" onclick="window.location.href='index.html'">Back</button>
         </header>
         <div class="books_content">
             <div class="category">
                 <details>
-                    <summary data-key="bookshelf.dev">Development</summary>
+                    <summary class="no-select" data-key="bookshelf.dev">Development</summary>
                     <ul class="book-list">
                         <li data-key="bookshelf.dev.1">"JavaScript Programming" - Eric Freeman</li>
                         <li data-key="bookshelf.dev.2">"Grokking Algorithms" — Aditya Bhargava</li>
@@ -44,7 +49,7 @@
             </div>
             <div class="category">
                 <details>
-                    <summary data-key="bookshelf.personal">Personal Effectiveness</summary>
+                    <summary class="no-select" data-key="bookshelf.personal">Personal Effectiveness</summary>
                     <ul class="book-list">
                         <li data-key="bookshelf.personal.1">"The Laws of Winning" — Bodo Schäfer</li>
                         <li data-key="bookshelf.personal.2">"Atomic Habits" — James Clear</li>
@@ -58,7 +63,7 @@
             </div>
             <div class="category">
                 <details>
-                    <summary data-key="bookshelf.psychology">Psychology & Esoterics</summary>
+                    <summary class="no-select" data-key="bookshelf.psychology">Psychology & Esoterics</summary>
                     <ul class="book-list">
                         <li data-key="bookshelf.psychology.1">"Journey of Souls" — Michael Newton</li>
                         <li data-key="bookshelf.psychology.2">"Love, Freedom, and Aloneness" — Osho</li>
@@ -72,7 +77,7 @@
             </div>
             <div class="category">
                 <details>
-                    <summary data-key="bookshelf.fiction">Science & Fiction</summary>
+                    <summary class="no-select" data-key="bookshelf.fiction">Science & Fiction</summary>
                     <ul class="book-list">
                         <li data-key="bookshelf.fiction.1">"A Brief History of Time" — Stephen Hawking</li>
                         <li data-key="bookshelf.fiction.2">"The Count of Monte Cristo" — A. Dumas</li>

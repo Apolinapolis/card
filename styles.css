@@ -43,6 +43,13 @@ body.dark-theme {
     background-color: var(--dark-background-color);
 }
 
+.no-select {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+}
+
 
 /* main */
 #theme-toggle-icon {
