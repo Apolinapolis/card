@@ -196,7 +196,7 @@ nav {
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
     #theme-toggle {
         display: none;
     }
@@ -210,7 +210,7 @@ nav {
     }
 
     body {
-        padding: 1vh;
+        padding: 1vh 1vh 5vh 1vh;
     }
 
     .logo h1 {
@@ -224,6 +224,8 @@ nav {
     .features nav div {
         font-size: 1.8rem;
     }
+
+
 }
 
 @media (max-width: 470px) {
