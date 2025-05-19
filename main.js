@@ -1,4 +1,5 @@
 const originalTexts = {};
+const copyTooltip = document.getElementById("copy-tooltip");
 
 const translations = {
   // Навигация
@@ -137,6 +138,25 @@ function initSingleOpenAccordion() {
       });
   });
 }
+
+document.getElementById('mail-wrap')?.addEventListener('click', () => {
+    const email = 'larra12@ya.ru';
+
+    navigator.clipboard.writeText(email).then(() => {
+        if (copyTooltip) {
+            const isEnglish = document.documentElement.classList.contains('lang-en');
+
+            copyTooltip.textContent = isEnglish ? 'Email copied!' : 'Email скопирован!';
+            copyTooltip.classList.add('show');
+
+            setTimeout(() => {
+                copyTooltip.classList.remove('show');
+            }, 2000);
+        }
+    }).catch(err => {
+        console.error('Ошибка копирования:', err);
+    });
+});
 
 //Create object for return to english language
 document.addEventListener("DOMContentLoaded", () => {

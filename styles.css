@@ -97,19 +97,42 @@ body.dark-theme svg path {
     grid-row: 1;
 }
 
-.telegram-logo {
-    display: block;
-    transition: all 0.3s ease;
-}
-
 .telegram-logo svg {
-    width: 50px;
-    height: 50px;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
-.telegram-logo:hover {
+.telegram-logo svg:hover {
     transform: scale(1.2) rotate(10deg);
+}
+
+#mail-wrap {
+    grid-column: 5;
+    grid-row: 1;
+    justify-self: start;
+    align-self: center;
+    transition: transform 0.3s ease;
+    z-index: 100;
+}
+
+#mail-wrap:hover {
+    transform: scale(1.2) rotate(10deg);
+}
+
+.tooltip {
+    grid-column: 4;
+    grid-row: 1;
+    justify-self: end;
+    align-self: end;
+    border-radius: 0.7rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s ease;
+    font-size: 1.2rem;
+}
+
+.tooltip.show {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .features {
@@ -196,6 +219,11 @@ nav {
     .features nav div {
         font-size: 2rem;
     }
+    
+    #mail-wrap {
+        grid-column: 4;
+        justify-self: end;
+    }
 }
 
 @media (max-width: 768px) {
@@ -235,6 +263,9 @@ nav {
 }
 
 @media (max-width: 470px) {
+    #mail-wrap {
+        justify-self: center;
+    }
     .logo h1 {
         font-size: 4rem;
     }
