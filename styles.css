@@ -52,19 +52,6 @@ body.dark-theme {
 
 
 /* main */
-#theme-toggle-icon {
-    grid-column: 5;
-    grid-row: 2;
-    justify-self: center;
-    align-self: start;
-    display: none;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-#theme-toggle-icon:hover {
-    transform: scale(1.2);
-}
 
 .content {
     display: grid;
@@ -77,6 +64,29 @@ body.dark-theme {
     box-sizing: border-box;
     outline: 2px solid var(--light-text_color);
     border-radius: 0.7rem;
+}
+
+.contacts {
+    grid-column-start: 1;
+    grid-column-end: 6;   
+    grid-row: 1;  
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;      
+    gap: 1.5rem;             
+    padding-right: 1.5rem;
+}
+
+.contacts svg {
+    width: 50px;
+    height: 50px;
+    /* fill: currentColor; */
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.contacts svg:hover {
+    transform: scale(1.2) rotate(10deg);
 }
 
 body.dark-theme .content {
@@ -92,42 +102,26 @@ body.dark-theme svg path {
     fill: var(--dark-text_color);
 }
 
-#tg-btn {
-    grid-column: 5;
-    grid-row: 1;
-}
-
-.telegram-logo svg {
-    transition: transform 0.3s ease;
+#phone-wrap svg {
+    margin-top: 15px;
+    margin-left: 10px;
 }
 
 .telegram-logo svg:hover {
     transform: scale(1.2) rotate(10deg);
 }
 
-#mail-wrap {
-    grid-column: 5;
-    grid-row: 1;
-    justify-self: start;
-    align-self: center;
-    transition: transform 0.3s ease;
-    z-index: 100;
-}
-
-#mail-wrap:hover {
-    transform: scale(1.2) rotate(10deg);
-}
 
 .tooltip {
-    grid-column: 4;
+    /* grid-column: 4;
     grid-row: 1;
-    justify-self: end;
-    align-self: end;
+    justify-self: center;
+    align-self: end; */
     border-radius: 0.7rem;
     opacity: 0;
     pointer-events: none;
     transition: opacity 1s ease;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .tooltip.show {
@@ -197,6 +191,20 @@ nav {
     transform: scale(1.2);
     color: var(--base-hover-color);
     transition: transform 0.4s ease;
+}
+
+#theme-toggle-icon {
+    grid-column: 5;
+    grid-row: 4;
+    justify-self: center;
+    align-self: center;
+    display: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#theme-toggle-icon:hover {
+    transform: scale(1.2);
 }
 
 @media (max-width: 830px) {
